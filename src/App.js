@@ -5,6 +5,7 @@ import configureStore from './store'
 import OrderBook from './components/order-book'
 import Ticker from './components/ticker'
 import Trades from './components/trades'
+import DepthChart from './components/depth-chart'
 import styled from "styled-components"
 import './App.css';
 
@@ -14,7 +15,8 @@ function App() {
   return (
      <Provider store={store}>
        <Container>
-        <OrderBook />     
+        <OrderBook />
+        <DepthChart />     
         <Side>
           <Ticker />
           <Trades />
